@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 1.03em 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* ---menu--- */
+.menu{
+position: fixed;
+z-index: 100;
+left: 0;
+top: 0;
+
+
+    background-color: #333;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+background: rgb(125,126,125); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    width: 100%;
+    color:#FFF;
+    height: 60px;
+    box-shadow: -1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.menu #logo {
+    float: left;
+    height: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    line-height: 30px;
+    display: none;
+}
+
+.myimg{
+    width: 100px; /*#4*/
+    float: left;
+    height: 30px;
+    padding: 15px 30px;
+}
+
+.menu > ul{
+margin: 0;
+padding: 0;
+float: right;
+list-style-type: none;
+}
+.menu > ul > li {
+    float: left;
+}
+
+.menu-item{
+    display:inline-block;
+    padding: 15px 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu-item:hover{
+    background-color: #ff0055;
+}
+
+/* ---styling sub--- */
+
+.sub-content{
+
+    background-color: #333; 
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+background: rgb(180,227,145); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(180,227,145,1) 0%, rgba(97,196,25,1) 50%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    
+    max-height: 0;
+}
+
+.sub-content a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.sub-drop ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sub-drop ul li a{
+    display: inline-block;
+    
+    padding: 10px 20px;
+}
+.sub-drop ul li:hover{
+    background-color: #ff0055;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+/* ---controling---*/
+.menu-item:focus{
+     background-color: #ff0055;
+}
+.menu ul li:hover .sub-content{
+   max-height:400px ;
+   transition: max-height 0.3s ease-in;
+   -webkit-transition: max-height 0.3s ease-in;
+   -moz-transition: max-height 0.3s ease-in;
+   -ms-transition: max-height 0.3s ease-in;
+   -o-transition: max-height 0.3s ease-in;
+}
+
+/*----content-----*/
+#alttext{
+    margin-top: 70px;
+}
+
+.sometext{
+    padding-top: 30px;
+    font: 3em "open Sans" , sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sometext span{
+    font-weight: bold;
+    color: red;
+}
+
+.myimge{
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.myimge img{
+    border: 1px solid #999;
+    box-shadow: -1px 10px 1px gray;
+    filter:grayscale(100%) ;
+    -webkit-filter:grayscale(100%) ;
+}
