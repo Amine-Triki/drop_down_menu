@@ -125,11 +125,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 }
 .menu ul li:hover .sub-content{
    max-height:400px ;
+   overflow: visible;
    transition: max-height 0.3s ease-in;
    -webkit-transition: max-height 0.3s ease-in;
    -moz-transition: max-height 0.3s ease-in;
    -ms-transition: max-height 0.3s ease-in;
    -o-transition: max-height 0.3s ease-in;
+}
+
+/*--- subx-menu---*/
+#subx-menu{
+
+    background:#333 ;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+background: rgb(180,227,145); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(180,227,145,1) 0%, rgba(97,196,25,1) 50%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+position: absolute;
+top: 98px;
+right: 150px;
+
+overflow: hidden;
+max-width: 0;
+}
+
+.sub-drop ul li:hover > #subx-menu {
+    max-width: 400px;
+    transition:max-width 0.3s ease-in ;
+    -webkit-transition:max-width 0.3s ease-in ;
+    -moz-transition:max-width 0.3s ease-in ;
+    -ms-transition:max-width 0.3s ease-in ;
+    -o-transition:max-width 0.3s ease-in ;
+}
+
+/*--- subx-drop---*/
+.sub-drop > ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu ul li:hover .sub-drop > ul{
+ visibility: visible;
+ opacity: 1;
+ transition: visibility 0s, opacity 0.3s ease-in;
+ -webkit-transition: visibility 0s, opacity 0.3s ease-in;
+ -moz-transition: visibility 0s, opacity 0.3s ease-in;
+ -ms-transition: visibility 0s, opacity 0.3s ease-in;
+ -o-transition: visibility 0s, opacity 0.3s ease-in;
 }
 
 /*----content-----*/
